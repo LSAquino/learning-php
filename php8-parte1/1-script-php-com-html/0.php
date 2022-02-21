@@ -1,0 +1,2 @@
+<?php
+// código de php

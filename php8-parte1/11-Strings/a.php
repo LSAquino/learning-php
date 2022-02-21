@@ -13,4 +13,4 @@ echo $a;
 echo'<br>';
 echo $b;
 
-#Nas PASRs não existe orientação definidad. Devemos ser consistentes ao longo do nosso código
+# Nas PASRs não existe orientação definidad. Devemos ser consistentes ao longo do nosso código

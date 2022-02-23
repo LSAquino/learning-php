@@ -64,5 +64,5 @@ $h1 = new Humano3('joao','ribeiro');
 $h2 = new Humano4('ana','martins');
 
 echo $h1->nome . ' ' . $h1->apelido;
-echo '<br>'
+echo '<br>';
 echo $h2->nome . ' ' . $h2->apelido;

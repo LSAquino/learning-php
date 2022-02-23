@@ -2,7 +2,7 @@
 
 // FUNCTIONS / FUNÇÕES - PARÂMETROS
 
-// PARÂMETROS OPCIONAIfa-spin
+// PARÂMETROS OPCIONAIS
 
 // Podemos criar funções que têm parâmetros com um valor pré definido.
 // A chamada dessas funções não obriga a definir um argumento para esses parâmetros.

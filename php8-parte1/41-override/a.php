@@ -82,3 +82,11 @@ class Quadrado extends Retangulo{
         $this->altura = $l;
     }
 }
+
+$rect = new Retangulo(10,20);
+$quad = new Quadrado(10);
+
+echo $rect->calcularArea();
+echo '<br>';
+echo $quad->calcularArea();
+echo '<br>';

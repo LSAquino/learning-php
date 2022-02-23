@@ -12,11 +12,12 @@ class Humano1
     }
 
     function nomeCompleto(){
-        return $this->nome . ' ' . $this.epelido;
+        return $this->nome . ' ' . $this->apelido;
+    }
 }
 
 $homem = new Humano('joao', 'ribeiro');
-$mulher = new Humano('ana', 'martins')
+$mulher = new Humano('ana', 'martins');
 
 echo $homem -> nomeCompleto();
 echo '<br>';

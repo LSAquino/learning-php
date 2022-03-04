@@ -2,7 +2,7 @@
 
 // EXEMPLO DE FUNÇÃO PARA CALCULAR A IDADE
 
-$data_de_nascimento = new DateTime('19-10-1973');
+$data_nascimento = new DateTime('19-10-1973');
 
 echo calculate($data_nascimento);
 
@@ -25,11 +25,11 @@ function calculate($data_nascimento)
     // validar os anos de forma precisa
     // se ainda não chegamos ao "nosso" mês, temos menos  ano do que é calculado
 
-    if ($agora->format('m') < $data_nascimento->format('d')) {
+    if ($agora->format('m') < $data_nascimento->format('m')) {
         $anos--;
     } elseif ($agora->format('m') == $data_nascimento->format('m')) {
         // estamos no mês de aniversário, vamos ver se o dia já chegou
-        if ($agora->format('d') == $data_nascimento->format('d')) {
+        if ($agora->format('d') < $data_nascimento->format('d')) {
             $anos--;
         }
     }

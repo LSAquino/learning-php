@@ -23,3 +23,5 @@ $portugal->modify('+12 years'); // adicionar 12 anos
 $portugal->modify('+1 year + 6 months'); // adicionar 1 ano e 6 meses
 $portugal->modify('+1 hour + 15 minutes'); // adicionar 1 hora e 15 minutos
 $portugal->modify('-1 hour - 15 minutes'); // retirar 1 hora e 15 minutos
+
+echo $portugal->format('d-m-Y H:i:s') . PHP_EOL;

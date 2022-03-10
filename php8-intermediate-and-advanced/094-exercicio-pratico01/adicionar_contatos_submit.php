@@ -21,4 +21,8 @@ $bd->insert("INSERT INTO dados VALUES(0,:nome,:telefone)", $parametros);
 
 echo 'Contato inserido com sucesso';
 ?>
-<div><a href="index.php">Voltar</a></div>
+<div>
+<a href="index.php">Voltar</a>
+<span> | </span>
+<a href="adicionar_contatos.php">Novo contato</a>
+</div>

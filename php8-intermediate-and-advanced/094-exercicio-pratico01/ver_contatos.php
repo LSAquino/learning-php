@@ -44,8 +44,8 @@ $contatos = $bd->select("SELECT * FROM dados");
                 <tr>
                     <th><?= $contato['nome'] ?></th>
                     <th><?= $contato['telefone'] ?></th>
-                    <td><a href="editar_contato.php?id=<?= $contato['id_contato'] ?>">Editar</a></td>
-                    <td><a href="deletar_contato.php?id=<?= $contato['id_contato'] ?>">Deletar</a></td>
+                    <td><a href="editar_contato.php?id=<?= aes_encriptar($contato['id_contato']) ?>">Editar</a></td>
+                    <td><a href="deletar_contato.php?id=<?= aes_encriptar($contato['id_contato']) ?>">Deletar</a></td>
                 </tr>
 
             <?php endforeach; ?>

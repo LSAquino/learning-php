@@ -11,6 +11,8 @@ require_once('inc/config.php');
 require_once('inc/EasyPDO.php');
 $bd = new EasyPDO\EasyPDO(MYSQL_OPTIONS);
 
+$id_contato = aes_desencriptar($id_contato);
+
 $parametros = [
     ':id_contato' => $id_contato
 ];

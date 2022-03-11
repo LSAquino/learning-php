@@ -40,7 +40,6 @@ switch ($rota) {
         ];
 
         $resultado = $bd->select("SELECT id_usuario, usuario, senha FROM usuarios WHERE usuario = :usuario", $parametros);
-        // print_r($resultado);
 
         if (count($resultado) == 0) {
             // erro

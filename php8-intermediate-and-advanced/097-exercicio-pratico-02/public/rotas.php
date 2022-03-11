@@ -70,9 +70,15 @@ switch ($rota) {
     case 'logado':
         $bd = new EasyPDO();
         $usuarios = $bd->select("
-            SELECT AES_DECRYPT(nome_completo, UNHEX(SHA2('" . AES_KEY . "',512))) nome_completo FROM usuarios
+            SELECT
+            usuario, 
+            AES_DECRYPT(nome_completo, UNHEX(SHA2('" . AES_KEY . "',512))) nome_completo 
+            FROM usuarios
         ");
 
-        print_r($usuarios);
+        require_once('../views/ver_usuarios.php');
+
+        // require_once('ver_usuarios.php');
+        // print_r($usuarios);
         break;
 }
